@@ -1,0 +1,305 @@
+<html>
+	<head>
+        <meta charset="utf-8">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            table{
+                width: 100%;
+            }
+            input {
+                width: 100%;
+                margin: 10px 0;
+            }
+            .lentes input{
+                width: auto;
+            }
+            
+            .lentes{
+               margin: 0 auto;
+                width: 40%;
+            }
+            
+            .lentes2{
+                 float: left;
+            }
+            
+            .motivo input{
+                width: 100px auto;
+            }
+            
+            .assinatura{
+                margin: 60px auto;
+                max-width: 700px;
+                
+            }
+            
+            .assinatura .item-assinatura{
+                border-top: 1px solid black;
+                width: 300px;
+                float: left;
+                margin: 0 25px;
+                text-align: center;
+                padding: 10px 0 0 0;
+            }
+            
+            .wrap{
+                max-width: 700px;
+                margin: 0 auto;
+                border: 1px solid black;
+                padding: 20px;
+            }
+            
+            .btn-imprimir{
+                font-size: 20px;
+                width: 150px;
+                margin: 20px auto;
+                display: inline-block;
+                text-align: center;
+            }
+        </style>
+    </head>
+	<body>
+        <div class="wrap">
+	<form> 
+        
+        <table > 
+        <tr>
+            <td colspan="4"><h1 style="text-align: center;">Formulário de Garantia - SAC</h1></td>
+        </tr>
+        <tr>
+            <td>Cliente:</td>
+            <td colspan="3"><input type="text" name="cliente"></td>
+        </tr>
+        <tr>
+            <td>Razão Social:</td>
+            <td colspan="3"><input type="text" name="social"></td>
+        </tr>
+        <tr>
+            <td>CNPJ: </td>
+            <td><input type="text" name="cnpj"></td>
+            <td> Cód:</td>
+            <td><input type="text" name="codigo"></td>
+        </tr>
+        <tr>
+            <td>Solicitante: </td>
+            <td colspan="3"> <input type="text" name="solicitante"></td>
+        </tr>
+        <tr>
+            <td>Data: </td>
+            <td colspan="1"> <input type="date" name="data"></td>
+        </tr>
+        <tr>
+            <td>NOME DO CONSUMIDOR: </td>
+            <td colspan="3"> <input type="text" name="consumidor"></td>
+        </tr> 
+        <tr>
+            <td> CPF: </td>
+            <td><input type="text" name="cpf"></td>
+            <td> Contato</td>
+            <td><input type="text" name="contato"></td>
+        </tr>
+        <tr>
+            <td>Email: </td>
+            <td colspan="3"> <input type="email" name="email"></td>
+        </tr> 
+        </table>
+	    
+        <table class="lentes">
+            <tr>
+                <td><input type="checkbox">Lentes prontas</td>
+                <td><input type="checkbox">Com Montagem</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox">Lente Surfaçada</td>
+                <td><input type="checkbox">Sem montagem</td>
+            </tr>
+        </table>
+    
+        <table>
+            <tr>
+                <td>Tratamento:</td>
+                <td> <input type="text" name="tratamento"></td>
+                <td>Coloração:</td>
+                <td><input type="text" name="coloracao"></td>
+            </tr>
+            <tr>
+                <td>Produto</td>
+                <td colspan="3"><input type="text" name="produto"></td>
+            </tr>
+        </table>
+
+        
+<!--    Grau a ser produzido-->
+    <center>Grau a ser produzido</center>
+        <br>
+        <table>
+        <tr>
+            <td>MarkOptical</td>
+            <td>ESF</td>
+            <td>CIL</td>
+            <td>EIXO</td>
+            <td>ADIÇÃO</td>
+            <td>BASE</td>
+            <td>DNP L</td>
+            <td>DNP L</td>
+            <td>ALT</td>
+        </tr>
+        <tr>
+            <td>OD</td>
+            <td><input type="text" name="desf"></td>
+            <td><input type="text" name="dcil"></td>
+            <td><input type="text" name="deixo"></td>
+            <td><input type="text" name="dadicao"></td>
+            <td><input type="text" name="dbase"></td>
+            <td><input type="text" name="ddnp1"></td>
+            <td><input type="text" name="ddnp2"></td>
+            <td><input type="text" name="dalt"></td>
+        </tr>
+        <tr>
+            <td>OE</td>
+            <td><input type="text" name="eesf"></td>
+            <td><input type="text" name="ecil"></td>
+            <td><input type="text" name="eeixo"></td>
+            <td><input type="text" name="eadicao"></td>
+            <td><input type="text" name="ebase"></td>
+            <td><input type="text" name="ednp1"></td>
+            <td><input type="text" name="ednp2"></td>
+            <td><input type="text" name="ealt"></td>
+        </tr>
+        </table>
+        
+        <table class="lentes lentes2">
+            <tr>
+                <td>Armação</td>
+                <td><input type="radio" name="armacao" value="s">Sim</td>
+                <td> <input type="radio" name="armacao" value="n">Não</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox">nylon</td>
+                <td colspan="2"><input type="checkbox">parafusos/3 peças</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox">acetato</td>
+                <td colspan="2"><input type="checkbox">aço metal</td>
+            </tr>
+            <tr>
+                <td>Ponte:</td>
+                <td colspan="2"><input type="text" name="Ponte"></td>
+            </tr>
+            <tr>
+                <td> ED:</td>
+                <td><input type="text" name="ed"></td>
+                <td>( Tamanho diagonal)</td>
+            </tr>
+            <tr>
+                <td> A:</td>
+                <td><input type="text" name="a"></td>
+                <td> (tamanho horizontal)</td>
+            </tr>
+            
+            <tr>
+                <td> B:</td>
+                <td><input type="text" name="b"></td>
+                <td>(tamanho vertical)</td>
+            </tr>
+        </table>
+        <table class="lentes lentes2">
+            <tr>
+                <td colspan="3">Informações adicionais</td>
+            </tr>
+            <tr>
+                <td>HE:</td>
+                <td colspan="2"><input type="text" name="he"></td>
+            </tr>
+            <tr>
+                <td> ST:</td>
+                <td colspan="2"> <input type="text" name="st"></td>
+            </tr>
+            <tr>
+                <td> LP: </td>
+                <td colspan="2">
+                    <input type="radio" name="lp" value="14">14
+                    <input type="radio" name="lp" value="15">15
+                    <input type="radio" name="lp" value="16">16
+                    <input type="radio" name="lp" value="17">17
+                    <input type="radio" name="lp" value="18">18
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3"> Outras informações</td>
+            </tr>
+            <tr>
+                <td> Distância vétice:</td>
+                <td colspan="2"><input type="text" name="dv"></td>
+            </tr>
+            
+            <tr>
+                <td>Ângulo de Curvatura:</td>
+                <td><input type="text" name="dv"></td>
+            </tr>
+            <tr>
+                <td> Ângulo pantoscópoci:</td>
+                <td><input type="text" name="dv"></td>
+            </tr>
+            <tr>
+                <td>Iniciais: </td>
+                <td><input type="text" name="dv"></td>
+            </tr>
+        </table>
+      
+        <table class="motivo">
+            <tr>
+                <td>Motivo</td>
+                <td colspan="4"><input type="text" name="motivo"></td>
+            </tr>
+            
+            <tr>
+                <td>Nome do Médico</td>
+                <td><input type="text" name="motivo" style="width: 100%;"></td>
+                <td>Data</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Nome do Médico</td>
+                <td><input type="text" name="motivo" style="width: 100%;"></td>
+                <td>Data</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td colspan="4">Medidas e Montagens</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"> DNP</td>
+                <td><input type="checkbox"> Altura</td>
+                <td><input type="checkbox"> Parâmetros FIT</td>
+                <td><input type="checkbox"> Montagem</td>
+            </tr>
+            <tr>
+                <td>Medidas e Montagens</td>
+                <td colspan="3"><input type="text" name="material" style="width: 100%;"></td>
+            </tr>
+            <tr>
+                <td style="text-align: justify">Obs:</td>
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align: justify">- Para todos os motivos acima, enviar cópia do pedido de compra e cópia do certificado preenchido<br>	
+        o grau e data da compra.	<br>						
+        - Em caso de duas receitas, enviar cópia das 2 receitas com diferença de data de até 3 mesesde uma para							
+        a outra, juntamente com as lentes a serem substituídas.</td>
+            </tr>
+        </table>
+        
+        <div class="assinatura">
+            <div class="item-assinatura">Assinatura e carimbo do resonsável da Ótica</div>
+            <div class="item-assinatura">Assinatura e carimbo do responsável</div>
+        </div>
+        
+        <input type="button" name="imprimir" value="Imprimir" onclick="window.print();" class="btn-imprimir">
+        </form>
+        </div>
+	
+	</body>
+</html>
